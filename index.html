@@ -1,194 +1,385 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    section {
+      margin: 5rem 0;
+    }
+  </style>
 </head>
-<body class=" bg-slate-800 transition-transform">
-  <div class="flex w-full items-center md:justify-around bg-slate-900 text-white md:flex-row flex-col">
+
+<body class="bg-gradient-to-br from-slate-700 via-slate-800 to-gray-900 transition-transform select-none">
+  <!-- Navbar -->
+  <div
+    class="flex w-full items-center md:justify-around bg-gradient-to-l from-slate-900 to-slate-800 text-white md:flex-row flex-col">
     <h1 class="font-semibold text-2xl py-5"><span class="text-red-500" id="home">Nikhil</span> Choudhary</h1>
     <ul class="flex md:flex-row flex-col items-center md:justify-between lg:gap-10 md:gap-9 gap-2 py-5">
-      <a href="#home"><li class="hover:text-red-500 hover:scale-115 hover:transition-transform transition-transform">Home</li></a>
-      <a href="#Services"><li class="hover:text-red-500 hover:scale-115 hover:transition-transform transition-transform">Services</li></a>
-      <a href="#"><li class="hover:text-red-500 hover:scale-115 hover:transition-transform transition-transform">About</li></a>
-      <a href="#"><li class="hover:text-red-500 hover:scale-115 hover:transition-transform transition-transform">Skills</li></a>
-      <a href="#"><li class="hover:text-red-500 hover:scale-115 hover:transition-transform transition-transform">Contact</li></a>
+      <a href="#home">
+        <li class="hover:text-red-500 hover:scale-115 transition-transform">Home</li>
+      </a>
+      <a href="#Services">
+        <li class="hover:text-red-500 hover:scale-115 transition-transform">Services</li>
+      </a>
+      <a href="#About">
+        <li class="hover:text-red-500 hover:scale-115 transition-transform">About</li>
+      </a>
+      <a href="#Skills">
+        <li class="hover:text-red-500 hover:scale-115 transition-transform">Skills</li>
+      </a>
+      <a href="#Contact">
+        <li class="hover:text-red-500 hover:scale-115 transition-transform">Contact</li>
+      </a>
     </ul>
   </div>
 
+  <!-- Intro -->
   <div class="flex w-full min-h-[500px] justify-center md:justify-around items-center">
-    <div class=" flex flex-col">
-      <p class=" inline text-[1.5rem] md:text-[2.5rem] text-white font-semibold">Hello, I'm</p>
-      <p class=" inline text-[1.5rem] md:text-[2.5rem] text-white font-semibold ">a Front end <span class="text-red-500">Developer</span></p>
-      <p class="w-[300px] text-slate-500 mt-2">Fond of creating web designs and bring them to life using code and develop mobile designs.</p>
-      <button class="text-white bg-red-500 w-[9rem] my-2 py-2 rounded transition-transform hover:transition-transform hover:bg-red-600 hover:scale-105">Creator Journey</button>
-      <button class="text-slate-900 bg-slate-200 w-[9rem] my-2 py-2 rounded transition-transform hover:transition-transform hover:bg-slate-300 hover:scale-105">Contact Me</button>
+    <div class="flex flex-col">
+      <p class="text-[1.5rem] md:text-[2.5rem] text-white font-semibold">Hello, I'm</p>
+      <p class="text-[1.5rem] md:text-[2.5rem] text-white font-semibold">a Front end <span
+          class="text-red-500">Developer</span></p>
+      <p class="w-[300px] text-slate-500 mt-2">Fond of creating web designs and bring them to life using code and
+        develop mobile designs.</p>
+      <a href="#projects"><button
+        class="text-white bg-red-500 w-[9rem] my-2 py-2 rounded hover:bg-red-600 hover:scale-105 transition-transform cursor-pointer">My
+        Journey</button></a>
+      <a href="mailto:reach.nikhil@outlook.in"><button
+        class="text-slate-900 bg-slate-200 w-[9rem] my-2 py-2 rounded hover:bg-slate-300 hover:scale-105 transition-transform">Get
+        in Touch</button></a>
     </div>
     <div class="hidden md:block">
       <img src="imgs/bar.png" alt="" class="h-[20rem]">
     </div>
   </div>
 
-  <div class="bg-white rounded-4xl w-[40vw] md:w-[30vw] h-0.5 md:h-1 mx-auto md:mt-3 mb-20 hover:bg-red-400 transition-transform hover:transition-transform hover:scale-110"></div>
-
-
-
-
-  <section class="w-full mt-8">
-    <div class="flex w-full justify-center md:justify-around items-center md:relative md:right-[4.5rem]">
-      <div class=" flex flex-col">
-        <p class=" inline text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold">Skill-Set</span></p>
-      </div>
-      <div class="hidden md:block">
-        <img src="imgs/bar.png" alt="" class="h-[18rem] hidden">
-      </div>
+  <div
+    class="bg-white rounded-4xl w-[40vw] md:w-[30vw] h-0.5 md:h-1 mx-auto md:mt-3 mb-20 hover:bg-red-400 transition-transform hover:scale-110">
   </div>
-  <div class="min-h-[500px] mx-auto w-[75vw] mt-2 rounded-2xl pt-8 pb-8 gap-7 md:gap-12 flex flex-wrap justify-evenly">
 
+  <!-- Skill Set Carousel -->
+  <section class="w-full mt-8" id="Skills">
+    <div class="flex w-full justify-center items-center my-10">
+      <div class="flex flex-col items-center">
+        <p class="text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold text-center">Skill-Set</p>
+      </div>
+    </div>
 
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">HTML</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/html-5.png" alt="" class="h-auto w-auto "></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+    <div class="relative w-[85vw] mx-auto mt-6">
+      <div id="skill-slider"
+        class="flex overflow-x-auto scroll-smooth gap-6 pb-4 scrollbar-hide select-none snap-x snap-mandatory lg:w-[60vw] md:w-[80vw] mx-auto">
+
+        <!-- Snap Skill Cards; content within center-aligned by items-center -->
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">HTML</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/html-5.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">CSS</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/css-3.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">JavaScript</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/js.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Tailwind CSS</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/tailwind.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Java</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/java.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Python</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/python.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Word</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/logo.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Excel</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/excel.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">PowerPoint</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/powerpoint.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <!-- Add more cards here like the above structure if desired -->
+      </div>
+      <!-- Carousel Buttons with margin outside cards -->
+      <button id="prevBtn"
+        class="hidden md:flex absolute -left-14 top-1/2 -translate-y-1/2 bg-red-500 text-white  py-1.5 px-3 rounded-full hover:bg-amber-600 transition">
+        < <button id="nextBtn"
+          class="hidden md:flex absolute -right-14 top-1/2 -translate-y-1/2 bg-red-500 text-white py-1.5 px-3 rounded-full hover:bg-amber-600 transition">
+          >
+      </button>
     </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">CSS</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/css-3.png" alt="" class="h-auto w-auto "></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="w-full mt-8" id="Services">
+    <div class="flex w-full justify-center items-center my-10">
+      <div class="flex flex-col items-center">
+        <p class="text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold text-center">Services</p>
+      </div>
     </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">JavaScript</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/js.png" alt="" class="h-[80%] w-auto mt-6"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+
+    <div class="relative w-[85vw] mx-auto mt-6">
+      <div id="skill-slider"
+        class="flex overflow-x-auto scroll-smooth gap-6 pb-4 scrollbar-hide select-none snap-x snap-mandatory lg:w-[60vw] md:w-[80vw] mx-auto">
+
+        <!-- Snap services Cards; content within center-aligned by items-center -->
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Web Development</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/web.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">I can build front end websites or landing pages for your any kind
+            of work.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Document</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/doc.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">I will create a document in word for you in your desired format and
+            design</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Presentation</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/ppt.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">I will create a Presentation in word on your given topic and
+            outline.</p>
+        </div>
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Typing</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/typing.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">I can type documents for you whether it is from image or from
+            handwritten. for your work like question paper etc.</p>
+        </div>
+        <!-- Add more cards here like the above structure if desired -->
+      </div>
+      <!-- Carousel Buttons with margin outside cards -->
+      <button id="prevBtn"
+        class="hidden md:flex absolute -left-14 top-1/2 -translate-y-1/2 bg-red-500 text-white  py-1.5 px-3 rounded-full hover:bg-amber-600 transition">
+        < <button id="nextBtn"
+          class="hidden md:flex absolute -right-14 top-1/2 -translate-y-1/2 bg-red-500 text-white py-1.5 px-3 rounded-full hover:bg-amber-600 transition">
+          >
+      </button>
     </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Tailwind CSS</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/tailwind.png" alt="" class="h-[80%] w-auto mt-6"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="w-full mt-8" id="projects">
+    <div class="flex w-full justify-center items-center my-10">
+      <div class="flex flex-col items-center">
+        <p class="text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold text-center">Projects</p>
+      </div>
     </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Java</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/java.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+
+    <div class="relative w-[85vw] mx-auto mt-6">
+      <!-- The scroll container HAS NO justify-center -->
+      <div id="skill-slider"
+        class="flex overflow-x-auto scroll-smooth gap-6 pb-4 scrollbar-hide select-none snap-x snap-mandatory lg:w-[60vw] md:w-[80vw] mx-auto">
+
+        <!-- Snap projects Cards; content within center-aligned by items-center -->
+        <div
+          class="w-[250px] flex-shrink-0 h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center p-4 select-none snap-center mx-auto gap-5">
+          <h3 class="text-slate-300 font-semibold text-lg">Sorry</h3>
+          <div class="w-full flex justify-center items-center"><img src="imgs/sad.png" alt=""
+              class="h-20 w-auto pointer-events-none select-none"></div>
+          <p class="text-slate-500 text-center mt-3">I currently dont have any projects to show, but they will be here
+            soon!</p>
+        </div>
+        <!-- Add more cards here like the above structure if desired -->
+      </div>
+      <!-- Carousel Buttons with margin outside cards -->
+      <button id="prevBtn"
+        class="hidden md:flex absolute -left-14 top-1/2 -translate-y-1/2 bg-red-500 text-white  py-1.5 px-3 rounded-full hover:bg-amber-600 transition">
+        < <button id="nextBtn"
+          class="hidden md:flex absolute -right-14 top-1/2 -translate-y-1/2 bg-red-500 text-white py-1.5 px-3 rounded-full hover:bg-amber-600 transition">
+          >
+      </button>
     </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Python</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/python.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Word</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/logo.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Excel</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/excel.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">PowerPoint</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/powerpoint.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Github</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/github.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Bootstrap</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/bootstrap.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">SQL</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/sql-server.png" alt="" class="h-[80%] w-auto mt-4"></div>
-      <p class="text-slate-500 p-2 text-center">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
-    </div>
-  </div>
   </section>
 
 
-  <div class="bg-white rounded-4xl w-[40vw] md:w-[30vw] h-0.5 md:h-1 mx-auto md:mt-3 mb-20 hover:bg-red-400 transition-transform hover:transition-transform hover:scale-110"></div>
-
-
-  <section class="w-full mt-8">
-    <div class="flex w-full justify-center md:justify-around items-center md:relative md:right-[4.5rem]">
-      <div class=" flex flex-col">
-        <p class=" inline text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold">Projects</span></p>
+  <!-- About Section -->
+  <section class="w-full mt-8" id="About">
+    <div class="flex w-full justify-center items-center my-10">
+      <div class="flex flex-col items-center">
+        <p class="text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold text-center">About Me</p>
       </div>
-      <div class="hidden md:block">
-        <img src="imgs/bar.png" alt="" class="h-[18rem] hidden">
-      </div>
-  </div>
-  <div class="min-h-[500px] mx-auto w-[75vw] mt-2 rounded-2xl pt-8 pb-8 gap-7 md:gap-12 flex flex-wrap justify-evenly">
-
-
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Sorry</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/sad.png" alt="" class="h-auto w-auto "></div>
-      <p class="text-slate-500 p-2 text-center">I currently don't have any project to show you, But it will be uploaded soon.</p>
     </div>
-    
-    
-  </div>
-  </section>
+    <div class="max-w-[90vw] md:max-w-[vw] mx-auto text-white">
+      <p>
+        Hi, I'm Nikhil, a Front-End Web Developer from Kuchaman City, Rajasthan. I specialize in building modern,
+        responsive websites and have hands-on experience with HTML, CSS, JavaScript, and UI design.
 
-  <div class="bg-white rounded-4xl w-[40vw] md:w-[30vw] h-0.5 md:h-1 mx-auto md:mt-3 mb-20 hover:bg-red-400 transition-transform hover:transition-transform hover:scale-110"></div>
+        Beyond web development, I’m skilled in MS Word, Excel, PowerPoint, and Adobe Photoshop for photo editing. I also
+        have experience in hardware/software installation and troubleshooting.
 
-  <section class="w-full mt-8">
-    <div class="flex w-full justify-center md:justify-around items-center md:relative md:right-[4.5rem]">
-      <div class=" flex flex-col">
-        <p class=" inline text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold" id="Services">Services</span></p>
-      </div>
-      <div class="hidden md:block">
-        <img src="imgs/bar.png" alt="" class="h-[18rem] hidden">
-      </div>
-  </div>
-  <div class="min-h-[500px] mx-auto w-[75vw] mt-2 rounded-2xl pt-8 pb-8 gap-7 md:gap-12 flex flex-wrap justify-evenly">
+        Currently, I’m expanding my knowledge in Backend Development and Databases to become a Full-Stack Developer.
+        With a typing speed of over 70 words per minute, I maintain high efficiency in my daily tasks.
 
+        In my free time, I enjoy playing cricket as a left-arm medium pacer and occasionally play chess for fun.
 
-    <div class="w-[250px] h-[300px] bg-slate-900 rounded-2xl flex flex-col items-center">
-      <h3 class="text-slate-300 font-semibold mt-4 text-lg">Web Development</h3>
-      <div class="w-full h-[40%] flex justify-center"><img src="imgs/sad.png" alt="" class="h-auto w-auto "></div>
-      <p class="text-slate-500 p-2 text-center">I can create a attractive and modern front end website for your any kind of work.</p>
+      </p>
     </div>
-    
-    
-  </div>
+
   </section>
 
 
+  <!-- Contact Section -->
+  <section class="w-full mt-8" id="Contact">
+    <div class="flex w-full justify-center items-center my-10">
+      <div class="flex flex-col items-center">
+        <p class="text-[1.5rem] md:text-[2.5rem] text-red-500 font-semibold text-center">Contact Me</p>
+      </div>
+    </div>
+    <div class="max-w-[90vw] md:max-w-[75vw] mx-auto text-justify text-white">
+      <form action="" class="w-full flex flex-col items-center justify-center gap-4">
 
-          
-  
+        <input type="text" name="" id="" placeholder="Full Name"
+          class=" rounded  px-2 py-1 w-[300px] bg-slate-300 placeholder:text-slate-600 text-slate-800 text-lg focus:border-red-500 border-2 outline-0 transition-transform">
+        <input type="email" name="" id="" placeholder="Email"
+          class=" rounded  px-2 py-1 w-[300px] bg-slate-300 placeholder:text-slate-600 text-slate-800 text-lg focus:border-red-500 border-2 outline-0 transition-transform">
+        <textarea name="" id="" placeholder="Your Message"
+          class=" rounded  px-2 py-1 w-[300px] bg-slate-300 placeholder:text-slate-600 text-slate-800 text-lg focus:border-red-500 border-2 outline-0 transition-transform"></textarea>
+        <button
+          class="rounded  px-2 py-1 w-[300px] bg-red-500 placeholder:text-slate-600 text-whitetext-lg focus:border-white transition-transform">Submit</button>
+      </form>
 
 
-  <footer class="w-full min-h-[150px] bg-slate-900 flex flex-col items-center text-slate-300">
+      <div class="mt-8 mb-4 bg-white w-[20%] mx-auto h-0.5"></div>
+
+
+
+      <div class="flex flex-wrap gap-5 justify-center">
+        <a href="mailto:reach.nikhil@outlook.in"><button
+            class="w-[125px] bg-blue-600 rounded px-2 py-1 text-lg text-white">&commat; Email</button></a>
+        <button class="w-[125px] bg-green-600 rounded px-2 py-1 text-lg text-white">📞 Call</button>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="w-full min-h-[150px] bg-slate-900 flex flex-col items-center text-slate-300 select-none">
     <p class="py-4 text-sm md:text-base">Made by <span class="font-semibold text-red-500">Nikhil Choudhary</span></p>
-    
-    <div class="flex justify-center items-center gap-1 md:gap-2 flex.wrap">
-      <img src="imgs/social/facebook.png" alt=""  class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2">
-      <img src="imgs/social/instagram.png" alt="" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2">
-      <img src="imgs/social/whatsapp.png" alt=""  class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2">
-      <img src="imgs/social/social.png"" alt=""   class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2">
-      <img src="imgs/social/telegram.png" alt=""  class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2">
-      <img src="imgs/social/linkedin2.png" alt="" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2">
-      <img src="imgs/social/youtube2.png" alt=""  class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2">
+    <div class="flex justify-center items-center gap-1 md:gap-2">
+      <img src="imgs/social/facebook.png" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2 select-none">
+      <img src="imgs/social/instagram.png" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2 select-none">
+      <img src="imgs/social/whatsapp.png" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2 select-none">
+      <img src="imgs/social/social.png" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2 select-none">
+      <img src="imgs/social/telegram.png" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2 select-none">
+      <img src="imgs/social/linkedin2.png" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2 select-none">
+      <img src="imgs/social/youtube2.png" class="w-[2.5rem] md:w-[3rem] p-1.5 md:p-2 select-none">
     </div>
-
-    <div class="w-[45vw] h-0.5 rounded-4xl bg-white my-4 mb-2"></div>
+    <div class="w-[45vw] h-0.5 rounded-4xl bg-white my-4"></div>
     <div class="flex justify-evenly w-[60%] md:w-[40%] text-blue-300">
       <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="#About">About</a>
+      <a href="#Contact">Contact</a>
     </div>
-    <p class="my-2 mb-2">&copf; all rights reserved | 2025</p>
-    
+    <p class="my-2">&copf; all rights reserved | 2025</p>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slider = document.querySelector("#skill-slider");
+      const prevBtn = document.querySelector("#prevBtn");
+      const nextBtn = document.querySelector("#nextBtn");
+      const cardWidth = 270; // 250px width + approx gap
+      let autoScroll, scrollTimeout;
 
+      function scrollRight() {
+        if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
+          slider.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          slider.scrollBy({ left: cardWidth, behavior: "smooth" });
+        }
+      }
+
+      function startAutoScroll() {
+        autoScroll = setInterval(scrollRight, 3000);
+      }
+
+      function stopAutoScroll() {
+        clearInterval(autoScroll);
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(startAutoScroll, 3000);
+      }
+
+      prevBtn.addEventListener("click", () => {
+        slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
+        stopAutoScroll();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        scrollRight();
+        stopAutoScroll();
+      });
+
+      slider.addEventListener("scroll", () => {
+        stopAutoScroll();
+      });
+
+      startAutoScroll();
+    });
+  </script>
 </body>
+
 </html>
